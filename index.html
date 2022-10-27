@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="programs">
+            <div class="programs-left left">
+                <ul class="left-menu">
+                    <li class="left-menu__item">
+                        <a href="#">Дашборд</a>
+                    </li>
+                    <li class="left-menu__item">
+                        <a href="#">Мои заказы</a>
+                    </li>
+                    <li class="left-menu__item left-menu__item_active">
+                        <a href="#">Мои программы</a>
+                    </li>
+                    <li class="left-menu__item">
+                        <a href="#">Учебный центр</a>
+                    </li>
+                    <li class="left-menu__item">
+                        <a href="#">Запрос токена</a>
+                    </li>
+                    <li class="left-menu__item">
+                        <a href="#">Техподдержка</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="programs-right right">
+                <div class="right-title">
+                    Мои программы
+                </div>
+                <div class="right-search">
+                    <label class="search-label">
+                        <input type="text" class="search-input" placeholder="Введите название">
+                    </label>
+                    
+                </div>
+                
+                <table class="right-table">
+                    <thead class="table-head">
+                        <tr>
+                            <th>
+                                Номер заказа
+                            </th>
+                            <th>
+                                Программа
+                            </th>
+                            <th>
+                                Действует до
+                            </th>
+                            <th>
+                                Скачать
+                            </th>
+                            <th>
+                                Руководство
+                            </th>
+                            <th>
+                                Статус
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr class="body-tr_active">
+                            <td class="body-number">
+                                112192
+                                <span class="body-number_active">
+                                    <div class="body-number__text body-number__text_hide">
+                                        Продлите заказ
+                                        <span class="triangle"></span>
+                                    </div>
+                                </span>
+                            </td>
+                            <td class="body-program">
+                                (2) Детский сад: Питание
+                            </td>
+                            <td class="body-date body-date__active">
+                                08.09.2022
+                            </td>
+                            <td class="body-download">
+                                <a href="#"></a>
+                            </td>
+                            <td class="body-file">
+                                <a href="#"></a>
+                            </td>
+                            <td class="body-status">
+                                <p class="body-status_active">Активировано (1)</p>
+                                <p>Не активировано (1)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="body-number">
+                                112192
+                            </td>
+                            <td class="body-program">
+                                (2) Детский сад: Питание
+                            </td>
+                            <td class="body-date">
+                                08.09.2022
+                            </td>
+                            <td class="body-download">
+                                <a href="#"></a>
+                            </td>
+                            <td class="body-file">
+                                <a href="#"></a>
+                            </td>
+                            <td class="body-status">
+                                <p class="body-status_active">Активировано (1)</p>
+                                <p>Не активировано (1)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="body-number">
+                                112192
+                            </td>
+                            <td class="body-program">
+                                (2) Детский сад: Питание
+                            </td>
+                            <td class="body-date">
+                                08.09.2022
+                            </td>
+                            <td class="body-download">
+                                <a href="#"></a>
+                            </td>
+                            <td class="body-file">
+                                <a href="#"></a>
+                            </td>
+                            <td class="body-status">
+                                <p class="body-status_active">Активировано (2)</p>
+                                <p>Не активировано (2)</p>
+                            </td>
+                        </tr>
+                    </tbody>                                        
+                </table>
+
+                <div class="activation">
+                    <div class="activation-top">
+                        <div class="activation-title">
+                            Доступно активации: 2
+                        </div>
+                        <div class="activation-subtitle">
+                            Запросите код и активируйте программу
+                        </div>
+                        <button class="activation-btn btn">
+                            Запросить код
+                        </button>
+                        <img src="./img/activation.svg" alt="activation" class="activation-img">                        
+                    </div>
+                    <div class="activation-bottom">
+                        <div class="bottom-item">
+                            <div class="item__info">
+                                <div class="item__date">
+                                    <span class="item_grey">Дата активации:</span> 2022-09-15 13:54:59 
+                                </div>
+                                <div class="item__name">
+                                    <span class="item_grey">Наименование компьютера:</span> HOME-PC
+                                    <span class="info-pc"></span>
+                                    
+                                </div>                                
+                                <div class="item__comment">
+                                    <span class="item_grey">Комментарий:</span> Хочу перенести программу
+                                </div>
+                                <div class="info-pc__popup info-pc__popup_hide">
+                                    <p>Роман<span class="triangle__info"></span></p>
+                                    <p>Pentium (R) Dual-Core CPU T440 @ 2.20 GHz</p>
+                                    <p>Майкрософт Windows 8.1 Профессиональная</p>                                    
+                                </div>
+                            </div>
+                            <div class="item-btn">
+                                <button class="btn__activation">Деактивировать</button>
+                            </div>                            
+                        </div>
+                        <div class="bottom-item">
+                            <div class="item__info">
+                                <div class="item__date">
+                                    <span class="item_grey">Дата активации:</span> 2022-09-15 13:54:59 
+                                </div>
+                                <div class="item__name">
+                                    <span class="item_grey">Наименование компьютера:</span> HOME-PC
+                                    <span class="info-pc"></span>
+                                </div>
+                                <div class="item__comment">
+                                    <span class="item_grey">Комментарий:</span> Хочу перенести программу
+                                </div>
+                                <div class="info-pc__popup info-pc__popup_hide">
+                                    <p>Роман<span class="triangle__info"></span></p>
+                                    <p>Pentium (R) Dual-Core CPU T440 @ 2.20 GHz</p>
+                                    <p>Майкрософт Windows 8.1 Профессиональная</p>                                    
+                                </div>
+                            </div>
+                            <div class="item-btn">
+                                <button class="btn__activation">Деактивировать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="right-table">
+                        <tbody class="table-body">
+                            <tr class="body-tr">
+                                <td class="body-number">
+                                    112192
+                                </td>
+                                <td class="body-program">
+                                    (2) Детский сад: Питание
+                                </td>
+                                <td class="body-date">
+                                    08.09.2022
+                                </td>
+                                <td class="body-download">
+                                    <a href="#"></a>
+                                </td>
+                                <td class="body-file">
+                                    <a href="#"></a>
+                                </td>
+                                <td class="body-status">
+                                    <p class="body-status_active">Активировано (2)</p>
+                                    <p>Не активировано (2)</p>
+                                </td>
+                            </tr>
+                            <tr class="body-tr_active">
+                                <td class="body-number">
+                                    112192
+                                    <span class="body-number_active">
+                                        <div class="body-number__text body-number__text_hide">
+                                            Продлите заказ
+                                            <span class="triangle"></span>
+                                        </div>
+                                    </span>
+                                </td>
+                                <td class="body-program">
+                                    (2) Детский сад: Питание
+                                </td>
+                                <td class="body-date body-date__active">
+                                    08.09.2022
+                                </td>
+                                <td class="body-download">
+                                    <a href="#"></a>
+                                </td>
+                                <td class="body-file">
+                                    <a href="#"></a>
+                                </td>
+                                <td class="body-status">
+                                    <p class="body-status_active">Активировано (1)</p>
+                                    <p>Не активировано (1)</p>
+                                </td>
+                            </tr>
+                            <tr class="body-tr">
+                                <td class="body-number">
+                                    112192
+                                </td>
+                                <td class="body-program">
+                                    (2) Детский сад: Питание
+                                </td>
+                                <td class="body-date">
+                                    08.09.2022
+                                </td>
+                                <td class="body-download">
+                                    <a href="#"></a>
+                                </td>
+                                <td class="body-file">
+                                    <a href="#"></a>
+                                </td>
+                                <td class="body-status">
+                                    <p class="body-status_active">Активировано (2)</p>
+                                    <p>Не активировано (2)</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="background-popupWindow popupWindow__hide">
+            <div class="popupWindow">
+                <div class="popupWindow-form">
+                    <div class="form__title">
+                        Запрос кода активации
+                    </div>
+                    <div class="form__subtitle">
+                        Введите исходный код, который выдает программа
+                    </div>
+                    <div class="form__inputs">
+                        <input type="tel" maxlength="1" placeholder="0">
+                        <input type="tel" maxlength="1" placeholder="0">
+                        <input type="tel" maxlength="1" placeholder="0">
+                        <input type="tel" maxlength="1" placeholder="0">
+                        <input type="tel" maxlength="1" placeholder="0">
+                        <input type="tel" maxlength="1" placeholder="0">
+                        <input type="tel" maxlength="1" placeholder="0">
+                        <input type="tel" maxlength="1" placeholder="0">
+                        <input type="tel" maxlength="1" placeholder="0">
+                        <input type="tel" maxlength="1" placeholder="0">
+                        <input type="tel" maxlength="1" placeholder="0">
+                        <input type="tel" maxlength="1" placeholder="0">
+                        <input type="tel" maxlength="1" placeholder="0">
+                        <input type="tel" maxlength="1" placeholder="0">
+                        <input type="tel" maxlength="1" placeholder="0">
+                    </div>
+                    <div class="form__comments">
+                        <input type="text" name="" id="" placeholder="Комментарий...">
+                    </div>
+                    <div class="form__btn">
+                        <button>Запросить код</button>
+                    </div>
+                </div>
+                <div class="popupWindow-close">
+                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M41.0487 44.322C41.9526 45.2259 43.4181 45.2259 44.322 44.322C45.2259 43.4181 45.2259 41.9526 44.322 41.0487L3.95123 0.677924C3.04733 -0.225974 1.58182 -0.225975 0.677924 0.677923C-0.225974 1.58182 -0.225975 3.04733 0.677923 3.95123L41.0487 44.322Z" fill="white"/>
+                        <path d="M0.677973 41.0488C-0.225926 41.9527 -0.225927 43.4182 0.677972 44.3221C1.58187 45.226 3.04738 45.226 3.95128 44.3221L44.3221 3.95129C45.226 3.04739 45.226 1.58188 44.3221 0.677982C43.4182 -0.225916 41.9527 -0.225917 41.0488 0.677982L0.677973 41.0488Z" fill="white"/>
+                    </svg>                        
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
