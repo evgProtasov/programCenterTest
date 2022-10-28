@@ -214,6 +214,9 @@ table tbody td {
 .body-status_active {
     color: #27AE60;
 }
+.body-status_nonactive {
+    color: #C4C4C4;
+}
 
 .activation {   
     
@@ -352,6 +355,8 @@ table tbody td {
             border: 1px solid #2A5FCB;
             border-radius: 50px;
             cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
 		}
 }
 
@@ -456,5 +461,8 @@ table tbody td {
 }
 .popupWindow__hide {
     display: none;
+}
+.popupWindow-close svg{
+    cursor: pointer;
 }
 
