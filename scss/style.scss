@@ -309,6 +309,7 @@ table tbody td {
 .info-pc__popup {
     
     white-space: nowrap;
+    background: #ffffff;
     color: #A5A5A5;
     font-weight: 500;
     font-size: 12px;
@@ -316,7 +317,7 @@ table tbody td {
     padding: 19px 25px 28px 34px;
     box-shadow: 0px 4px 20px #E5E5E5;
     position: absolute;
-    z-index: 100;
+    z-index: 300 !important;
     top: 0;
     left: 350px;
 }
