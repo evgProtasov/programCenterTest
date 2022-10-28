@@ -1,37 +1,42 @@
 const activeCircles = document.querySelectorAll('.body-number_active');
-const popUpWindows = document.querySelectorAll('.body-number__text');
+
 const activationBtn = document.querySelector('.activation-btn');
 const closeWindow = document.querySelector('.popupWindow-close');
 const openWindow = document.querySelector('.background-popupWindow');
+
 const infoPcs = document.querySelectorAll('.info-pc');
 const infoPcPopups = document.querySelectorAll('.info-pc__popup')
 
-activeCircles.forEach(activeCircle => {
-    for(let i = 0; i < popUpWindows.length; i++) {
-        activeCircle.addEventListener('mouseover', () => {
-            
-            popUpWindows[i].classList.remove('body-number__text_hide')
-        })
-        activeCircle.addEventListener('mouseout', () => {
-            
-            popUpWindows[i].classList.add('body-number__text_hide')
-        })
+function activeReference(e) {
+    const target = e.target;
+    const child = target.firstElementChild
+    console.log(child)
+    if (child.classList.contains('body-number__text_hide')) {
+        child.classList.remove('body-number__text_hide')
+    } else {
+        child.classList.add('body-number__text_hide')
     }
-    
+}
+
+function activePcInfo(e) {
+    const target = e.target;
+    const child = target.firstElementChild
+    console.log(child)
+    if (child.classList.contains('info-pc__popup_hide')) {
+        child.classList.remove('info-pc__popup_hide')
+    } else {
+        child.classList.add('info-pc__popup_hide')
+    }
+}
+
+activeCircles.forEach(activeCircle => {
+    activeCircle.addEventListener('mouseover', activeReference)
+    activeCircle.addEventListener('mouseout', activeReference)
 })
 
 infoPcs.forEach(infoPc => {
-    for(let i = 0; i < infoPcPopups.length; i++) {
-        infoPc.addEventListener('mouseover', () => {
-            
-            infoPcPopups[i].classList.remove('info-pc__popup_hide')
-        })
-        infoPc.addEventListener('mouseout', () => {
-            
-            infoPcPopups[i].classList.add('info-pc__popup_hide')
-        })
-    }
-    
+    infoPc.addEventListener('mouseover', activePcInfo)
+    infoPc.addEventListener('mouseout', activePcInfo)
 })
 
 activationBtn.addEventListener('click', () => {
